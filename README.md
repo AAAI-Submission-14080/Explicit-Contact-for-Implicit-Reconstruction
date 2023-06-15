@@ -30,6 +30,7 @@ pip install -r requirements.txt
 
 - Download the [HO3D](https://github.com/shreyashampali/ho3d) dataset and put it into the `./data/ho3d` directory
 
+- Download the [MANO](https://mano.is.tue.mpg.de/) model `MANO_RIGHT.pkl` and put it into the `./externals/mano` directory
 
 ## Evaluation
 - To evaluate my model on HO3D, run:
