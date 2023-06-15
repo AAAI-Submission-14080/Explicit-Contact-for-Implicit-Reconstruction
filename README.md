@@ -11,12 +11,12 @@ conda create --no-default-packages -n choi python=3.8
 conda activate choi
 ```
 
-- [PyTorch](https://www.pytorch.org) tested on version 1.8.0
+- [PyTorch](https://www.pytorch.org) is tested on version 1.8.0
 ```
 conda install pytorch==1.8.0 torchvision==0.9.0 cudatoolkit=11.1.1 -c pytorch -c conda-forge
 ```
 
-- other packages listed in `requirements.txt`
+- Other packages are listed in `requirements.txt`
 ```
 pip install -r requirements.txt
 ```
@@ -24,7 +24,7 @@ pip install -r requirements.txt
 
 ## Pre-trained Model and Dataset
 
-- Unzip `weights.zip` and the pretrained model is placed in the `./weights/ho3d/checkpoints` directory
+- Unzip `weights.zip` and the pre-trained model is placed in the `./weights/ho3d/checkpoints` directory
 
 - Unzip `data.zip` and the processed data and corresponding SDF files are placed in the `./data` directory
 
@@ -37,11 +37,11 @@ pip install -r requirements.txt
 ```eval
 python -m models.choi --config-file experiments/ho3d.yaml --ckpt weights/ho3d/checkpoints/ho3d_weight.ckpt
 ```
-- The result file is generated in the `./output` directory
+- The resulting file is generated in the `./output` directory
 
 
 ## Results
-Our method achieves the following performance on HO3D test set:
+Our method achieves the following performance on the HO3D test set:
 
 | Method | F@5mm | F@10mm | Chamfer Distance (mm) |
 | :----  | :---: | :----: | :-------------------: |
@@ -49,5 +49,5 @@ Our method achieves the following performance on HO3D test set:
 
 
 ## Acknowledgments
-Part of the code is borrowed from the following projects, including [IHOI](https://github.com/JudyYe/ihoi), [Neural Body](https://github.com/zju3dv/neuralbody), and [MeshGraphormer](https://github.com/microsoft/MeshGraphormer). Many thanks to their contributions.
+Part of the code is borrowed from the following projects, including [IHOI](https://github.com/JudyYe/ihoi), [Neural Body](https://github.com/zju3dv/neuralbody), and [MeshGraphormer](https://github.com/microsoft/MeshGraphormer). Many thanks for their contributions.
 
